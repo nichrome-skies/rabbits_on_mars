@@ -1,31 +1,3 @@
 <!DOCTYPE html>
 
-<?php
-
-include 'configurePhyKD2.php' ;
-
-$sql = "SELECT * FROM topics" ;
-$result = mysqli_query ($link , $sql) ;
-
-echo "<table border = '1'
-<tr>
-<th>Topic Number</th>
-<th>Topic Name</th>
-<th>Go To Topic</th>
-</tr>" ;
-
-while ($row = mysqli_fetch_array ($result)) {
-    echo "<tr>" ;
-    echo "<td>" . $row ['tNumber'] . "</td>" ;
-    echo "<td>" . $row ['tName'] . "</td>" ;
-    echo "<td> <a href = " . $row ['tLink'] . " class = 'button'>" ;
-    echo $row ['tName'] . " Keywords </a> </td>" ;
-    echo "</tr>" ;
-}
-
-echo "</table>" ;
-echo "<br>" ;
-
-mysqli_close ($link) ;
-
-?>
+<html> <h1>hello world</h1> </html>
